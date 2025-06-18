@@ -4,12 +4,12 @@
 use PHPUnit\Framework\TestCase;
 use App\CalculadoraDNI3;
 
-class CalculadoraDNI1Test extends TestCase
+class CalculadoraDNI3Test extends TestCase
 {
     public function testObtenerLetra()
     {
         $dniSinLetra = 12345678;
-        $calc = new CalculadoraDNI2($dniSinLetra);
+        $calc = new CalculadoraDNI3($dniSinLetra);
 
         $letraEsperada = 'Z';
         $letraObtenida = substr($calc->getDNIConLetra(), -1); // sacamos la letra final
@@ -20,7 +20,7 @@ class CalculadoraDNI1Test extends TestCase
     public function testDNIConLetraCompleto()
     {
         $dniSinLetra = 12345678;
-        $calc = new CalculadoraDNI2($dniSinLetra);
+        $calc = new CalculadoraDNI3($dniSinLetra);
 
         $dniConLetraEsperado = '12345678Z';
 
