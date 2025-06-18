@@ -4,7 +4,7 @@
 use PHPUnit\Framework\TestCase;
 use App\CalculadoraDNI3;
 
-class CalculadoraDNI2Test extends TestCase
+class CalculadoraDNI1Test extends TestCase
 {
     public function testObtenerLetra()
     {
